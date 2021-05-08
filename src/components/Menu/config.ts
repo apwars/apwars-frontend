@@ -83,6 +83,10 @@ const config: MenuEntry[] = [
       //   href: 'https://coinmarketcap.com/currencies/apwars',
       // },
       {
+        label: 'Wars',
+        href: 'https://app.apwars.farm/wars',
+      },
+      {
         label: 'AstroTools',
         href: `https://app.astrotools.io/pancake-pair-explorer/0xab6Ddad53513f9F0b57778A2ebf8aA81FBaCc8c9`,
       },
