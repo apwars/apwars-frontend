@@ -11,6 +11,7 @@ const farms: FarmConfig[] = [
     team: 0,
     tier: 0,
     risk: 5,
+    race: "All",
     lpSymbol: 'wGOLD - BUSD LP',
     lpAddresses: {
       97: '',
@@ -32,6 +33,7 @@ const farms: FarmConfig[] = [
     team: 0,
     tier: 0,
     risk: 3,
+    race: "All",
     lpSymbol: 'wGOLD-BNB LP',
     lpAddresses: {
       97: '',
@@ -45,15 +47,38 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
+  {
+    pid: 31,
+    internalPID: 17,
+    farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
+    rewardTip: 'wGOLD',
+    team: 0,
+    tier: 0,
+    risk: 5,
+    race: "All",
+    lpSymbol: 'wCOURAGE - wGOLD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x08c6D471f4F59801a9fE1b3A6905325ACb3ea8FD',
+    },
+    tokenSymbol: 'wCOURAGE',
+    tokenAddresses: {
+      97: '',
+      56: '0x5f51a3ce7f2233777328866f477e86a91ca9ddec',
+    },
+    quoteTokenSymbol: QuoteToken.wGOLD,
+    quoteTokenAdresses: contracts.wGOLD,
+  },
   // Barracks
   {
     pid: 13,
     internalPID: 9,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
     rewardTip: 'wGOLD',
-    team: 0,
+    team: 1,
     tier: 0,
     risk: 5,
+    race: "Barracks",
     lpSymbol: 'wWARRIOR - wGOLD LP',
     lpAddresses: {
       97: '',
@@ -72,9 +97,10 @@ const farms: FarmConfig[] = [
     internalPID: 11,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
     rewardTip: 'wGOLD',
-    team: 0,
+    team: 1,
     tier: 0,
     risk: 5,
+    race: "Barracks",
     lpSymbol: 'wARCHER - wGOLD LP',
     lpAddresses: {
       97: '',
@@ -93,9 +119,10 @@ const farms: FarmConfig[] = [
     internalPID: 10,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
     rewardTip: 'wGOLD',
-    team: 0,
+    team: 2,
     tier: 0,
     risk: 5,
+    race: "Barracks",
     lpSymbol: 'wGRUNT - wGOLD LP',
     lpAddresses: {
       97: '',
@@ -114,9 +141,10 @@ const farms: FarmConfig[] = [
     internalPID: 12,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
     rewardTip: 'wGOLD',
-    team: 0,
+    team: 2,
     tier: 0,
     risk: 5,
+    race: "Barracks",
     lpSymbol: 'wORC-ARCHER - wGOLD LP',
     lpAddresses: {
       97: '',
@@ -136,9 +164,10 @@ const farms: FarmConfig[] = [
     internalPID: 13,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
     rewardTip: 'wGOLD',
-    team: 0,
+    team: 1,
     tier: 0,
     risk: 5,
+    race: "Armory",
     lpSymbol: 'wARMORED-WARRIOR - wGOLD LP',
     lpAddresses: {
       97: '',
@@ -157,9 +186,10 @@ const farms: FarmConfig[] = [
     internalPID: 15,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
     rewardTip: 'wGOLD',
-    team: 0,
+    team: 1,
     tier: 0,
     risk: 5,
+    race: "Armory",
     lpSymbol: 'wCROSSBOWMAN - wGOLD LP',
     lpAddresses: {
       97: '',
@@ -178,9 +208,10 @@ const farms: FarmConfig[] = [
     internalPID: 14,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
     rewardTip: 'wGOLD',
-    team: 0,
+    team: 2,
     tier: 0,
     risk: 5,
+    race: "Armory",
     lpSymbol: 'wARMORED-GRUNT - wGOLD LP',
     lpAddresses: {
       97: '',
@@ -199,9 +230,10 @@ const farms: FarmConfig[] = [
     internalPID: 16,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
     rewardTip: 'wGOLD',
-    team: 0,
+    team: 2,
     tier: 0,
     risk: 5,
+    race: "Armory",
     lpSymbol: 'wPIKE-ORC - wGOLD LP',
     lpAddresses: {
       97: '',
@@ -224,6 +256,7 @@ const farms: FarmConfig[] = [
     team: 0,
     tier: 0,
     risk: 3,
+    race: "All",
     lpSymbol: 'ETH-BNB LP',
     lpAddresses: {
       97: '',
@@ -245,6 +278,7 @@ const farms: FarmConfig[] = [
     team: 0,
     tier: 0,
     risk: 3,
+    race: "All",
     lpSymbol: 'BTCB-BNB LP',
     lpAddresses: {
       97: '',
@@ -266,6 +300,7 @@ const farms: FarmConfig[] = [
     team: 0,
     tier: 0,
     risk: 3,
+    race: "All",
     lpSymbol: 'BUSD-USDC LP',
     lpAddresses: {
       97: '',
@@ -287,6 +322,7 @@ const farms: FarmConfig[] = [
     team: 0,
     tier: 0,
     risk: 3,
+    race: "All",
     lpSymbol: 'BUSD-DAI LP',
     lpAddresses: {
       97: '',
@@ -308,6 +344,7 @@ const farms: FarmConfig[] = [
     team: 0,
     tier: 0,
     risk: 3,
+    race: "All",
     lpSymbol: 'EGG-BUSD LP',
     lpAddresses: {
       97: '',
@@ -329,6 +366,7 @@ const farms: FarmConfig[] = [
     team: 0,
     tier: 0,
     risk: 3,
+    race: "All",
     lpSymbol: 'CAKE-BUSD LP',
     lpAddresses: {
       97: '',
@@ -350,6 +388,7 @@ const farms: FarmConfig[] = [
     team: 0,
     tier: 0,
     risk: 3,
+    race: "All",
     lpSymbol: 'BNB-BUSD LP',
     lpAddresses: {
       97: '',
@@ -375,6 +414,7 @@ const farms: FarmConfig[] = [
     team: 1,
     tier: 1,
     risk: 3,
+    race: "All",
     lpSymbol: 'wGOLD',
     lpAddresses: {
       97: '',
@@ -398,6 +438,7 @@ const farms: FarmConfig[] = [
     team: 1,
     tier: 1,
     risk: 3,
+    race: "All",
     lpSymbol: 'wGOLD',
     lpAddresses: {
       97: '',
@@ -418,9 +459,10 @@ const farms: FarmConfig[] = [
     farmManager: '0x1234FB622B7e4831F0d5Ec9e34f26710CfA1fd29',
     farmManagerVersion: 'v2',
     rewardTip: 'wGRUNT',
-    team: 1,
+    team: 2,
     tier: 1,
     risk: 3,
+    race: "All",
     lpSymbol: 'wGOLD',
     lpAddresses: {
       97: '',
@@ -441,9 +483,10 @@ const farms: FarmConfig[] = [
     farmManager: '0x10fddf14be3cf6e0e368ecf8d10a423895933c0d',
     farmManagerVersion: 'v2',
     rewardTip: 'wORC-ARCHER',
-    team: 1,
+    team: 2,
     tier: 1,
     risk: 3,
+    race: "All",
     lpSymbol: 'wGOLD',
     lpAddresses: {
       97: '',
@@ -469,6 +512,7 @@ const farms: FarmConfig[] = [
     team: 1,
     tier: 2,
     risk: 3,
+    race: "All",
     lpSymbol: 'wGOLD',
     lpAddresses: {
       97: '',
@@ -492,6 +536,7 @@ const farms: FarmConfig[] = [
     team: 1,
     tier: 2,
     risk: 3,
+    race: "All",
     lpSymbol: 'wWARRIOR',
     lpAddresses: {
       97: '',
@@ -517,6 +562,7 @@ const farms: FarmConfig[] = [
     team: 1,
     tier: 2,
     risk: 3,
+    race: "All",
     lpSymbol: 'wGOLD',
     lpAddresses: {
       97: '',
@@ -540,6 +586,7 @@ const farms: FarmConfig[] = [
     team: 1,
     tier: 2,
     risk: 3,
+    race: "All",
     lpSymbol: 'wARCHER',
     lpAddresses: {
       97: '',
@@ -565,6 +612,7 @@ const farms: FarmConfig[] = [
     team: 2,
     tier: 2,
     risk: 3,
+    race: "All",
     lpSymbol: 'wGOLD',
     lpAddresses: {
       97: '',
@@ -585,9 +633,10 @@ const farms: FarmConfig[] = [
     farmManager: '0xa7C4Df300eA5B16E3C02E36A53e9456b0074A17d',
     farmManagerVersion: 'v2',
     rewardTip: 'wARMORED-GRUNT',
-    team: 1,
+    team: 2,
     tier: 2,
     risk: 3,
+    race: "All",
     lpSymbol: 'wGRUNT',
     lpAddresses: {
       97: '',
@@ -613,6 +662,7 @@ const farms: FarmConfig[] = [
     team: 2,
     tier: 2,
     risk: 3,
+    race: "All",
     lpSymbol: 'wGOLD',
     lpAddresses: {
       97: '',
@@ -633,9 +683,10 @@ const farms: FarmConfig[] = [
     farmManager: '0x08bBA42794b1511E24831dc26877f81f5fdc20b3',
     farmManagerVersion: 'v2',
     rewardTip: 'wPIKE-ORC',
-    team: 1,
+    team: 2,
     tier: 2,
     risk: 3,
+    race: "All",
     lpSymbol: 'wORC-ARCHER',
     lpAddresses: {
       97: '',
@@ -661,6 +712,7 @@ const farms: FarmConfig[] = [
     team: 1,
     tier: 3,
     risk: 3,
+    race: "All",
     lpSymbol: 'wCROSSBOWMAN - wARMORED-WARRIOR LP',
     lpAddresses: {
       97: '',
@@ -683,6 +735,7 @@ const farms: FarmConfig[] = [
     team: 2,
     tier: 3,
     risk: 3,
+    race: "All",
     lpSymbol: 'wPIKE-ORC-wARMORED-GRUNT LP',
     lpAddresses: {
       97: '',

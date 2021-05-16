@@ -23,7 +23,7 @@ export interface FarmsProps {
 
 const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const { path } = useRouteMatch()
-  const { tierId } = useParams<{ tierId: string }>()
+  const { tierId, race } = useParams<{ tierId: string, race: string }>()
   const TranslateString = useI18n()
   const farmsLP = useFarms()
   const tokenPrice = useTokenBUSDPrice()
@@ -45,13 +45,13 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const activeFarms = farmsLP.filter((farm) => {
     const isActiveFarms = farm.multiplier !== '0X'
 
-    return isActiveFarms && farm.tier === parseInt(tierId)
+    return race === farm.race && isActiveFarms && farm.tier === parseInt(tierId)
   })
 
   const inactiveFarms = farmsLP.filter((farm) => {
     const isInactiveFarms = farm.multiplier === '0X'
 
-    return isInactiveFarms && farm.tier === parseInt(tierId)
+    return race === farm.race && isInactiveFarms && farm.tier === parseInt(tierId)
   })
 
   const stakedOnlyFarms = activeFarms.filter(
