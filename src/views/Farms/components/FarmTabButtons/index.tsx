@@ -49,10 +49,10 @@ const FarmTabButtons = ({ stakedOnly, setStakedOnly }) => {
               {TranslateString(729, 'All')}
             </ButtonMenuItem>
             <ButtonMenuItem as={Link} to={`${teamHumansUrl}`}>
-              {TranslateString(730, 'Humans')}
+              {TranslateString(730, 'Corporation')}
             </ButtonMenuItem>
             <ButtonMenuItem as={Link} to={`${teamOrcsUrl}`}>
-              {TranslateString(731, 'Orcs')}
+              {TranslateString(731, 'Degenerate')}
             </ButtonMenuItem>
           </ButtonMenu>
         </div>
