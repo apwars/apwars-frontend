@@ -30,19 +30,31 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Gold Mine',
-        href: '/farms/tier/0',
+        href: '/farms/tier/0/All',
+      },
+      {
+        label: 'Gold Mine - Barracks',
+        href: '/farms/tier/0/Barracks',
+      },
+      {
+        label: 'Gold Mine - Armory',
+        href: '/farms/tier/0/Armory',
+      },
+      {
+        label: 'Gold Mine - Arcane Library',
+        href: '/farms/tier/0/ArcaneLibrary',
       },
       {
         label: 'Barracks',
-        href: '/farms/tier/1',
+        href: '/farms/tier/1/All',
       },
       {
         label: 'Armory',
-        href: '/farms/tier/2',
+        href: '/farms/tier/2/All',
       },
       {
         label: 'Arcane Library',
-        href: '/farms/tier/3',
+        href: '/farms/tier/3/All',
       },
     ],
   },
