@@ -8,7 +8,7 @@ import { Image, Heading } from '@pancakeswap-libs/uikit'
 import { BLOCKS_PER_YEAR, CAKE_PER_BLOCK, CAKE_POOL_PID } from 'config'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
-import { useFarms, usePriceBnbBusd, useTokenBUSDPrice } from 'state/hooks'
+import { useFarms, usePriceBnbBusd, useTokenBUSDPrice, useTokenwARMOREDWARRIORwGOLDPrice, useTokenwARMOREDGRUNTwGOLDPrice } from 'state/hooks'
 import useRefresh from 'hooks/useRefresh'
 import { fetchFarmUserDataAsync } from 'state/actions'
 import { QuoteToken } from 'config/constants/types'
@@ -27,6 +27,8 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const TranslateString = useI18n()
   const farmsLP = useFarms()
   const tokenPrice = useTokenBUSDPrice()
+  const tokenPricewARMOREDWARRIOR = useTokenwARMOREDWARRIORwGOLDPrice()
+  const tokenPricewARMOREDGRUNT =  useTokenwARMOREDGRUNTwGOLDPrice()
   const bnbPrice = usePriceBnbBusd()
   const { account, ethereum }: { account: string; ethereum: provider } = useWallet()
   const { tokenMode } = farmsProps
@@ -82,8 +84,6 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         const tokenRewardPerYear = tokenRewardPerBlock.times(BLOCKS_PER_YEAR)
 
         let apy = tokenPrice.times(tokenRewardPerYear)
-
-
         let totalValue = new BigNumber(farm.lpTotalInQuoteToken || 0)
 
         if (farm.quoteTokenSymbol === QuoteToken.BNB) {
@@ -92,6 +92,16 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
         if (farm.quoteTokenSymbol === QuoteToken.wGOLD) {
           totalValue = totalValue.times(tokenPrice)
+        }
+
+        if (farm.quoteTokenSymbol === QuoteToken.wARMOREDWARRIOR) {
+          apy = tokenPricewARMOREDWARRIOR.times(tokenRewardPerYear)
+          totalValue = totalValue.times(tokenPricewARMOREDWARRIOR)
+        }
+
+        if (farm.quoteTokenSymbol === QuoteToken.wARMOREDGRUNT) {
+          apy = tokenPricewARMOREDGRUNT.times(tokenRewardPerYear)
+          totalValue = totalValue.times(tokenPricewARMOREDGRUNT)
         }
 
         if (totalValue.comparedTo(0) > 0) {
@@ -113,7 +123,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         />
       ))
     },
-    [bnbPrice, account, tokenPrice, ethereum],
+    [bnbPrice, account, tokenPrice, tokenPricewARMOREDWARRIOR, tokenPricewARMOREDGRUNT, ethereum],
   )
 
   function showCards() {
