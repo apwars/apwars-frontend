@@ -28,6 +28,7 @@ export enum QuoteToken {
   'wCROSSBOWMAN' = 'wCROSSBOWMAN',
   'wPIKEORC' = 'wPIKE-ORC',
   'wARMOREDWARRIOR' = 'wARMORED-WARRIOR',
+  'wCOURAGE' = 'wCOURAGE',
   'BUSD' = 'BUSD',
   'TWT' = 'TWT',
   'UST' = 'UST',
