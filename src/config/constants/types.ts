@@ -73,6 +73,7 @@ export interface FarmConfig {
     earnLabel: string
     endBlock: number
   }
+  quoteTokenBlanceLP?: any
 }
 
 export interface PoolConfig {

@@ -646,7 +646,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'wGOLD',
     lpAddresses: {
       97: '',
-      56: '0xab6Ddad53513f9F0b57778A2ebf8aA81FBaCc8c9',
+      56: '0x9e15154b80a68191E2D5C4B220a24bd99a422DeE',
     },
     tokenSymbol: 'wORC-ARCHER',
     tokenAddresses: {
@@ -654,7 +654,7 @@ const farms: FarmConfig[] = [
       56: '0x7ab6eedd9443e0e98e5ea93667ca5b250b8dda51',
     },
     quoteTokenSymbol: QuoteToken.wGOLD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenAdresses: contracts.wGOLD,
   },
   {
     isTokenOnly: true,
@@ -678,7 +678,7 @@ const farms: FarmConfig[] = [
       56: '0x7ab6eedd9443e0e98e5ea93667ca5b250b8dda51',
     },
     quoteTokenSymbol: QuoteToken.wGOLD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenAdresses: contracts.wGOLD,
   },
   {
     isTokenOnly: true,
