@@ -65,7 +65,10 @@ const fetchFarms = async (account: string) => {
 
       if (farmConfig.isTokenOnly) {
         tokenAmount = new BigNumber(lpTokenBalanceFarmManager).div(new BigNumber(10).pow(tokenDecimals))
-        if (farmConfig.tokenSymbol === QuoteToken.BUSD && farmConfig.quoteTokenSymbol === QuoteToken.BUSD) {
+        if (
+          (farmConfig.tokenSymbol === QuoteToken.BUSD && farmConfig.quoteTokenSymbol === QuoteToken.BUSD) ||
+          farmConfig.quoteTokenSymbol === QuoteToken.wGOLD
+        ) {
           tokenPriceVsQuote = new BigNumber(1)
         } else {
           tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP))
@@ -121,7 +124,12 @@ const fetchFarms = async (account: string) => {
             {
               address: info.burnManager,
               name: 'getBurnRate',
-              params: [farmConfig.farmManager, farmConfig.isTokenOnly ? farmConfig.tokenAddresses[CHAIN_ID] : farmConfig.lpAddresses[CHAIN_ID], account, farmConfig.internalPID],
+              params: [
+                farmConfig.farmManager,
+                farmConfig.isTokenOnly ? farmConfig.tokenAddresses[CHAIN_ID] : farmConfig.lpAddresses[CHAIN_ID],
+                account,
+                farmConfig.internalPID,
+              ],
             },
           ])
 
@@ -139,6 +147,7 @@ const fetchFarms = async (account: string) => {
 
       return {
         ...farmConfig,
+        quoteTokenBlanceLP: (new BigNumber(quoteTokenBlanceLP)).div(new BigNumber(10).pow(quoteTokenDecimals)),
         tokenAmount: tokenAmount.toJSON(),
         // quoteTokenAmount: quoteTokenAmount,
         lpTotalInQuoteToken: lpTotalInQuoteToken.toJSON(),
