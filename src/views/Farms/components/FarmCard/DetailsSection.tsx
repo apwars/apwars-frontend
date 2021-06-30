@@ -82,7 +82,7 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
       {!removed && (
         <Flex justifyContent="space-between">
           {isTokenOnly
-            ? (<Text>{TranslateString(23, 'Total Stacked')}:</Text>)
+            ? (<Text>{TranslateString(23, 'Total Staked')}:</Text>)
             : (<Text>{TranslateString(23, 'Total Liquidity')}:</Text>)
           }
 
