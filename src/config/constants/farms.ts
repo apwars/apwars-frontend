@@ -225,7 +225,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wGOLD,
   },
   {
-    pid: 35,
+    pid: 37,
     internalPID: 21,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
     rewardTip: 'wGOLD',
@@ -608,7 +608,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'wSKELETONWARRIOR',
     tokenAddresses: {
       97: '',
-      56: '0x7ab6eedd9443e0e98e5ea93667ca5b250b8dda51',
+      56: '0xb5d488dc4DE64A6a968D8f317DB8DE2cDBF52828',
     },
     quoteTokenSymbol: QuoteToken.wGOLD,
     quoteTokenAdresses: contracts.busd,
@@ -617,7 +617,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     pid: 35,
     internalPID: 0,
-    farmManager: '0x4D21177Bf8a0F9cfAca6d0f568Ff3e79a121B106',
+    farmManager: '0x90Dd6771273eB5F1b1e2852D4871482Dfb9B009f',
     farmManagerVersion: 'v2',
     rewardTip: 'wHOUND',
     team: 2,
@@ -632,7 +632,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'wHOUND',
     tokenAddresses: {
       97: '',
-      56: '0x7ab6eedd9443e0e98e5ea93667ca5b250b8dda51',
+      56: '0x4D21177Bf8a0F9cfAca6d0f568Ff3e79a121B106',
     },
     quoteTokenSymbol: QuoteToken.wGOLD,
     quoteTokenAdresses: contracts.busd,
