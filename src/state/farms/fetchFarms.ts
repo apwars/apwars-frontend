@@ -147,7 +147,6 @@ const fetchFarms = async (account: string) => {
 
       return {
         ...farmConfig,
-        quoteTokenBlanceLP: (new BigNumber(quoteTokenBlanceLP)).div(new BigNumber(10).pow(quoteTokenDecimals)),
         tokenAmount: tokenAmount.toJSON(),
         // quoteTokenAmount: quoteTokenAmount,
         lpTotalInQuoteToken: lpTotalInQuoteToken.toJSON(),

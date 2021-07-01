@@ -49,14 +49,18 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
   let liquidityUrlPathParts = ''
   if (lpLabel === 'wCROSSBOWMAN - wARMORED-WARRIOR LP') {
     liquidityUrlPathParts = getLiquidityUrlPathParts({
-      quoteTokenAdresses, quoteTokenSymbol, tokenAddresses: {
+      quoteTokenAdresses,
+      quoteTokenSymbol,
+      tokenAddresses: {
         97: '',
         56: '0xA0ecF9c7114eFFB43440B95D54e09A2a67331236',
       },
     })
   } else if (lpLabel === 'wPIKE-ORC-wARMORED-GRUNT LP') {
     liquidityUrlPathParts = getLiquidityUrlPathParts({
-      quoteTokenAdresses, quoteTokenSymbol, tokenAddresses: {
+      quoteTokenAdresses,
+      quoteTokenSymbol,
+      tokenAddresses: {
         97: '',
         56: '0x491c739efd076655f7D8D0DB545b7fb09DdF517f',
       },
@@ -81,10 +85,11 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
       </Flex>
       {!removed && (
         <Flex justifyContent="space-between">
-          {isTokenOnly
-            ? (<Text>{TranslateString(23, 'Total Staked')}:</Text>)
-            : (<Text>{TranslateString(23, 'Total Liquidity')}:</Text>)
-          }
+          {isTokenOnly ? (
+            <Text>{TranslateString(23, 'Total Staked')}:</Text>
+          ) : (
+            <Text>{TranslateString(23, 'Total Liquidity')}:</Text>
+          )}
 
           <Text>{totalValueFormated}</Text>
         </Flex>
