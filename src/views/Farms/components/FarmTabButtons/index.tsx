@@ -6,7 +6,7 @@ import useI18n from 'hooks/useI18n'
 
 const FarmTabButtons = ({ stakedOnly, setStakedOnly }) => {
   const { url } = useRouteMatch()
-  const { tierId, race } = useParams<{ tierId: string, race: string }>()
+  const { tierId, race } = useParams<{ tierId: string; race: string }>()
   const TranslateString = useI18n()
 
   const isActive = window.location.pathname.search('history') === -1
@@ -20,13 +20,12 @@ const FarmTabButtons = ({ stakedOnly, setStakedOnly }) => {
     team = 2
   }
 
-  const activeUrl = team === 0 ? url : `${url}/team/${team}`;
-  const inactiveUrl = team === 0 ? `${url}/history` : `${url}/team/${team}/history`;
+  const activeUrl = team === 0 ? url : `${url}/team/${team}`
+  const inactiveUrl = team === 0 ? `${url}/history` : `${url}/team/${team}/history`
 
-  const teamAllUrl = isActive ? `${url}` : `${url}/history`;
-  const teamHumansUrl = isActive ? `${url}/team/1` : `${url}/team/1/history`;
-  const teamOrcsUrl = isActive ? `${url}/team/2` : `${url}/team/2/history`;
-
+  const teamAllUrl = isActive ? `${url}` : `${url}/history`
+  const teamHumansUrl = isActive ? `${url}/team/1` : `${url}/team/1/history`
+  const teamOrcsUrl = isActive ? `${url}/team/2` : `${url}/team/2/history`
 
   return (
     <Wrapper>
@@ -69,13 +68,12 @@ const Wrapper = styled.div`
   align-items: center;
   margin-bottom: 32px;
 
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     flex-direction: column;
     > div {
       margin: 8px 0px;
     }
   }
-
 `
 
 const ToggleWrapper = styled.div`

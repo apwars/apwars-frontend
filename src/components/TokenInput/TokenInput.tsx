@@ -24,10 +24,10 @@ const TokenInput: React.FC<TokenInputProps> = ({
 }) => {
   const TranslateString = useI18n()
   let symbolBurn = 'wGOLD'
-  if(symbol === 'WCROSSBOWMAN - WARMORED-WARRIOR LP') {
+  if (symbol === 'WCROSSBOWMAN - WARMORED-WARRIOR LP') {
     symbolBurn = 'LP-Token'
   }
-  if(symbol === 'WPIKE-ORC-WARMORED-GRUNT LP') {
+  if (symbol === 'WPIKE-ORC-WARMORED-GRUNT LP') {
     symbolBurn = 'LP-Token'
   }
   return (
