@@ -51,6 +51,10 @@ export default {
     56: '',
     97: '',
   },
+  wCOURAGE: {
+    56: '0x5f51a3ce7f2233777328866f477e86a91ca9ddec',
+    97: '',
+  },
   usdc: {
     56: '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d',
     97: '',
