@@ -51,13 +51,13 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const [stakedOnly, setStakedOnly] = useState(false)
 
   const activeFarms = farmsLP.filter((farm) => {
-    const isActiveFarms = farm.multiplier !== '0X'
+    const isActiveFarms = farm.multiplier !== '0X' && farm.tokenPerBlock !== 0 
 
     return race === farm.race && isActiveFarms && farm.tier === parseInt(tierId)
   })
 
   const inactiveFarms = farmsLP.filter((farm) => {
-    const isInactiveFarms = farm.multiplier === '0X'
+    const isInactiveFarms = farm.multiplier === '0X' || farm.tokenPerBlock === 0 
 
     return race === farm.race && isInactiveFarms && farm.tier === parseInt(tierId)
   })
