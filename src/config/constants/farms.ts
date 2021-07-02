@@ -159,7 +159,11 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wGOLD,
   },
   // {
+<<<<<<< HEAD
   //   pid: 43,
+=======
+  //   pid: 36,
+>>>>>>> main
   //   internalPID: 20,
   //   farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
   //   rewardTip: 'wGOLD',
@@ -167,6 +171,7 @@ const farms: FarmConfig[] = [
   //   tier: 0,
   //   risk: 3,
   //   race: 'Barracks',
+<<<<<<< HEAD
   //   lpSymbol: 'wSKELETON WARRIOR - wGOLD LP',
   //   lpAddresses: {
   //     97: '',
@@ -176,12 +181,27 @@ const farms: FarmConfig[] = [
   //   tokenAddresses: {
   //     97: '',
   //     56: '0x934e11a44b2e817fe9bd6f337ef21bd35e46080e',
+=======
+  //   lpSymbol: 'wSKELETON-WARRIOR - wGOLD LP',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0xf101954d51ffc12640b006e9c951ffebbd6b7259',
+  //   },
+  //   tokenSymbol: 'wSKELETON-WARRIOR',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0xb5d488dc4DE64A6a968D8f317DB8DE2cDBF52828',
+>>>>>>> main
   //   },
   //   quoteTokenSymbol: QuoteToken.wGOLD,
   //   quoteTokenAdresses: contracts.wGOLD,
   // },
   // {
+<<<<<<< HEAD
   //   pid: 44,
+=======
+  //   pid: 37,
+>>>>>>> main
   //   internalPID: 21,
   //   farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
   //   rewardTip: 'wGOLD',
@@ -192,16 +212,28 @@ const farms: FarmConfig[] = [
   //   lpSymbol: 'wHOUND - wGOLD LP',
   //   lpAddresses: {
   //     97: '',
+<<<<<<< HEAD
   //     56: '0x9e15154b80a68191E2D5C4B220a24bd99a422DeE',
+=======
+  //     56: '0xe8eae2eac9e1d87932c4e94303894ac28304ee23',
+>>>>>>> main
   //   },
   //   tokenSymbol: 'wHOUND',
   //   tokenAddresses: {
   //     97: '',
+<<<<<<< HEAD
   //     56: '0x934e11a44b2e817fe9bd6f337ef21bd35e46080e',
+=======
+  //     56: '0x4D21177Bf8a0F9cfAca6d0f568Ff3e79a121B106',
+>>>>>>> main
   //   },
   //   quoteTokenSymbol: QuoteToken.wGOLD,
   //   quoteTokenAdresses: contracts.wGOLD,
   // },
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
   // Armory
   {
     pid: 21,
@@ -656,54 +688,54 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.wGOLD,
     quoteTokenAdresses: contracts.busd,
   },
-  {
-    isTokenOnly: true,
-    pid: 34,
-    internalPID: 0,
-    farmManager: '0x5f3DFbC1a02D9e67F274BfcaF3D1FA0De8492773',
-    farmManagerVersion: 'v2',
-    rewardTip: 'wSKELETONWARRIOR',
-    team: 2,
-    tier: 1,
-    risk: 3,
-    race: 'All',
-    lpSymbol: 'wGOLD',
-    lpAddresses: {
-      97: '',
-      56: '0x3ca13bafe9908bb693a4398410d4fcc2de16573a',
-    },
-    tokenSymbol: 'wSKELETONWARRIOR',
-    tokenAddresses: {
-      97: '',
-      56: '0x7ab6eedd9443e0e98e5ea93667ca5b250b8dda51',
-    },
-    quoteTokenSymbol: QuoteToken.wGOLD,
-    quoteTokenAdresses: contracts.busd,
-  },
-  {
-    isTokenOnly: true,
-    pid: 35,
-    internalPID: 0,
-    farmManager: '0x2472E35F2C47743c717c4a9FFC7E2F62F3e35e12',
-    farmManagerVersion: 'v2',
-    rewardTip: 'wHOUND',
-    team: 2,
-    tier: 1,
-    risk: 3,
-    race: 'All',
-    lpSymbol: 'wGOLD',
-    lpAddresses: {
-      97: '',
-      56: '0xaa8e2ac94c7508d8151d9665a59ec18c1cba1529',
-    },
-    tokenSymbol: 'wHOUND',
-    tokenAddresses: {
-      97: '',
-      56: '0x7ab6eedd9443e0e98e5ea93667ca5b250b8dda51',
-    },
-    quoteTokenSymbol: QuoteToken.wGOLD,
-    quoteTokenAdresses: contracts.busd,
-  },
+  // {
+  //   isTokenOnly: true,
+  //   pid: 34,
+  //   internalPID: 0,
+  //   farmManager: '0xE56a2BB9C5b75D8E2c0A84Fe312051A11bB12c7C',
+  //   farmManagerVersion: 'v2',
+  //   rewardTip: 'wSKELETON-WARRIOR',
+  //   team: 2,
+  //   tier: 1,
+  //   risk: 3,
+  //   race: 'All',
+  //   lpSymbol: 'wGOLD',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0xab6Ddad53513f9F0b57778A2ebf8aA81FBaCc8c9',
+  //   },
+  //   tokenSymbol: 'wSKELETON-WARRIOR',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0x7ab6eedd9443e0e98e5ea93667ca5b250b8dda51',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.wGOLD,
+  //   quoteTokenAdresses: contracts.busd,
+  // },
+  // {
+  //   isTokenOnly: true,
+  //   pid: 35,
+  //   internalPID: 0,
+  //   farmManager: '0x90Dd6771273eB5F1b1e2852D4871482Dfb9B009f',
+  //   farmManagerVersion: 'v2',
+  //   rewardTip: 'wHOUND',
+  //   team: 2,
+  //   tier: 1,
+  //   risk: 3,
+  //   race: 'All',
+  //   lpSymbol: 'wGOLD',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0xab6Ddad53513f9F0b57778A2ebf8aA81FBaCc8c9',
+  //   },
+  //   tokenSymbol: 'wHOUND',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0x7ab6eedd9443e0e98e5ea93667ca5b250b8dda51',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.wGOLD,
+  //   quoteTokenAdresses: contracts.busd,
+  // },
 
   // TIER:2
   {
