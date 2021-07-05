@@ -897,7 +897,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'wGOLD',
     lpAddresses: {
       97: '',
-      56: '0xab6Ddad53513f9F0b57778A2ebf8aA81FBaCc8c9',
+      56: '0xdf9aff48816e5e9930b050b7ab8ec2de04db2772',
     },
     tokenSymbol: 'wUNDEAD-ARCHER',
     tokenAddresses: {
@@ -910,7 +910,7 @@ const farms: FarmConfig[] = [
   {
     isTokenOnly: true,
     pid: 39,
-    internalPID: 1,
+    internalPID: 2,
     farmManager: '0x550a370BDb1342Ea1024Ec7F67534f64EE4b35c3',
     farmManagerVersion: 'v2',
     rewardTip: 'wUNDEAD-ARCHER',
@@ -921,7 +921,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'wSKELETON-WARRIOR',
     lpAddresses: {
       97: '',
-      56: '0x50929D99E64AFA17fA2c99d09410ceC3b6Ab6997',
+      56: '0xf101954d51ffc12640b006e9c951ffebbd6b7259',
     },
     tokenSymbol: 'wUNDEAD-ARCHER',
     tokenAddresses: {
@@ -947,7 +947,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'wGOLD',
     lpAddresses: {
       97: '',
-      56: '0xab6Ddad53513f9F0b57778A2ebf8aA81FBaCc8c9',
+      56: '0x9e102025a7f643955cc881d2211dccb5ff71a6fc',
     },
     tokenSymbol: 'wUNDEAD-PIKEMAN',
     tokenAddresses: {
@@ -960,7 +960,7 @@ const farms: FarmConfig[] = [
   {
     isTokenOnly: true,
     pid: 41,
-    internalPID: 1,
+    internalPID: 4,
     farmManager: '0x9CCBC0dB33CA3A09c302d5b82C90d000AF5B49Db',
     farmManagerVersion: 'v2',
     rewardTip: 'wUNDEAD-PIKEMAN',
@@ -971,7 +971,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'wHOUND',
     lpAddresses: {
       97: '',
-      56: '0x045762780214EAf5E1e112917B033DC9246CF264',
+      56: '0xe8eae2eac9e1d87932c4e94303894ac28304ee23',
     },
     tokenSymbol: 'wUNDEAD-PIKEMAN',
     tokenAddresses: {
