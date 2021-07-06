@@ -360,7 +360,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 44,
-    internalPID: 23,
+    internalPID: 28,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
     rewardTip: 'wGOLD',
     team: 2,
