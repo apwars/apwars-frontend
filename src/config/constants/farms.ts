@@ -359,7 +359,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wGOLD,
   },
   {
-    pid: 43,
+    pid: 44,
     internalPID: 23,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
     rewardTip: 'wGOLD',
@@ -370,12 +370,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'wUNDEAD-PIKEMAN - wGOLD LP',
     lpAddresses: {
       97: '',
-      56: '0x9e102025a7f643955cc881d2211dccb5ff71a6fc',
+      56: '0xD6406A6b247436bbc07a5B021740746c0dc1081d',
     },
     tokenSymbol: 'wUNDEAD-PIKEMAN',
     tokenAddresses: {
       97: '',
-      56: '0x70cAa78CdDf1A372EF213adA87141180DFAf54CB',
+      56: '0x8b394cfAeBA9812801C92388570C95208Ad1300D',
     },
     quoteTokenSymbol: QuoteToken.wGOLD,
     quoteTokenAdresses: contracts.wGOLD,
@@ -937,7 +937,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     pid: 40,
     internalPID: 0,
-    farmManager: '0x9CCBC0dB33CA3A09c302d5b82C90d000AF5B49Db',
+    farmManager: '0x4Fb3fD5c747d900Cf8Ef9846D9898D4542521B44',
     farmManagerVersion: 'v2',
     rewardTip: 'wUNDEAD-PIKEMAN',
     team: 2,
@@ -947,7 +947,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'wGOLD',
     lpAddresses: {
       97: '',
-      56: '0x9e102025a7f643955cc881d2211dccb5ff71a6fc',
+      56: '0xD6406A6b247436bbc07a5B021740746c0dc1081d',
     },
     tokenSymbol: 'wUNDEAD-PIKEMAN',
     tokenAddresses: {
@@ -960,8 +960,8 @@ const farms: FarmConfig[] = [
   {
     isTokenOnly: true,
     pid: 41,
-    internalPID: 4,
-    farmManager: '0x9CCBC0dB33CA3A09c302d5b82C90d000AF5B49Db',
+    internalPID: 1,
+    farmManager: '0x4Fb3fD5c747d900Cf8Ef9846D9898D4542521B44',
     farmManagerVersion: 'v2',
     rewardTip: 'wUNDEAD-PIKEMAN',
     team: 2,
