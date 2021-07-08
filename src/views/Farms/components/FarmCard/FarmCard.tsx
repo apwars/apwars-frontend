@@ -15,6 +15,7 @@ import ApyButton from './ApyButton'
 import {
   useTokenwARMOREDGRUNTwGOLDPrice,
   useTokenwARMOREDWARRIORwGOLDPrice,
+  useTokenwUNDEADPIKEMANwGOLDPrice,
   useTokenBUSDPrice,
 } from '../../../../state/hooks'
 
@@ -109,6 +110,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, tokenPrice, bnbPrice
   const pricewGOLD = useTokenBUSDPrice()
   const pricewARMOREDGRUNT = useTokenwARMOREDGRUNTwGOLDPrice()
   const pricewARMOREDWARRIOR = useTokenwARMOREDWARRIORwGOLDPrice()
+  const pricewUNDEADPIKEMAN = useTokenwUNDEADPIKEMANwGOLDPrice()
 
   const totalValue: BigNumber = useMemo(() => {
     if (!farm.lpTotalInQuoteToken) {
@@ -126,6 +128,9 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, tokenPrice, bnbPrice
     if (farm.quoteTokenSymbol === QuoteToken.wARMOREDWARRIOR) {
       return pricewGOLD.times(pricewARMOREDWARRIOR).times(farm.lpTotalInQuoteToken)
     }
+    if (farm.quoteTokenSymbol === QuoteToken.wUNDEADPIKEMAN) {
+      return pricewGOLD.times(pricewUNDEADPIKEMAN).times(farm.lpTotalInQuoteToken)
+    }
     return farm.lpTotalInQuoteToken
   }, [
     bnbPrice,
@@ -135,6 +140,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, tokenPrice, bnbPrice
     pricewARMOREDGRUNT,
     pricewGOLD,
     pricewARMOREDWARRIOR,
+    pricewUNDEADPIKEMAN,
   ])
 
   const totalValueFormated = totalValue

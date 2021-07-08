@@ -14,6 +14,7 @@ import {
   useTokenBUSDPrice,
   useTokenwARMOREDWARRIORwGOLDPrice,
   useTokenwARMOREDGRUNTwGOLDPrice,
+  useTokenwUNDEADPIKEMANwGOLDPrice,
 } from 'state/hooks'
 import useRefresh from 'hooks/useRefresh'
 import { fetchFarmUserDataAsync } from 'state/actions'
@@ -35,6 +36,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const tokenPrice = useTokenBUSDPrice()
   const tokenPricewARMOREDWARRIOR = useTokenwARMOREDWARRIORwGOLDPrice()
   const tokenPricewARMOREDGRUNT = useTokenwARMOREDGRUNTwGOLDPrice()
+  const tokenPricewUNDEADPIKEMAN = useTokenwUNDEADPIKEMANwGOLDPrice()
   const bnbPrice = usePriceBnbBusd()
   const { account, ethereum }: { account: string; ethereum: provider } = useWallet()
   const { tokenMode } = farmsProps
@@ -110,6 +112,12 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           totalValue = totalValue.times(tokenPricewARMOREDGRUNT)
         }
 
+
+        if (farm.quoteTokenSymbol === QuoteToken.wUNDEADPIKEMAN) {
+          apy = tokenPricewUNDEADPIKEMAN.times(tokenRewardPerYear)
+          totalValue = totalValue.times(tokenPricewUNDEADPIKEMAN)
+        }
+
         if (totalValue.comparedTo(0) > 0) {
           apy = apy.div(totalValue)
         }
@@ -129,7 +137,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         />
       ))
     },
-    [bnbPrice, account, tokenPrice, tokenPricewARMOREDWARRIOR, tokenPricewARMOREDGRUNT, ethereum],
+    [bnbPrice, account, tokenPrice, tokenPricewARMOREDWARRIOR, tokenPricewARMOREDGRUNT, tokenPricewUNDEADPIKEMAN, ethereum],
   )
 
   function showCards() {
