@@ -387,7 +387,7 @@ const farms: FarmConfig[] = [
   // Stables
   {
     pid: 47,
-    internalPID: 25,
+    internalPID: 29,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
     rewardTip: 'wGOLD',
     team: 2,
@@ -397,12 +397,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'wDEATHK-NIGHT - wGOLD LP',
     lpAddresses: {
       97: '',
-      56: '0xa24d5abc184604b5e779c8a6ff5003544a996657',
+      56: '0x88e491b65af6663bb0a496a9a90e3428e0c60724',
     },
     tokenSymbol: 'wDEATHK-NIGHT',
     tokenAddresses: {
       97: '',
-      56: '0x7537e9607b962434d4a9e50eE25e2F38B1F00Ef2',
+      56: '0xD35d5bCCb4141ed62f5cf6B0b020e74eBf793EE5',
     },
     quoteTokenSymbol: QuoteToken.wGOLD,
     quoteTokenAdresses: contracts.wGOLD,
@@ -1107,9 +1107,9 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     pid: 46,
     internalPID: 0,
-    farmManager: '0x365D9dFF6915C1986Ce2f7CBb9a500BfdeC5521C',
+    farmManager: '0x8A5dcdA90c6dCf2defa6E746CC141a29D4eD01D1',
     farmManagerVersion: 'v2',
-    rewardTip: 'wDEATHK-NIGHT',
+    rewardTip: 'wDEATH-KNIGHT',
     team: 2,
     tier: 4,
     risk: 3,
@@ -1117,7 +1117,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'wCOURAGE',
     lpAddresses: {
       97: '',
-      56: '0xfd153cf0f0d38933865cff58791ed16f938c6256',
+      56: '0xeccc204fe46ef158d877bc59ad5489c35e64612a',
     },
     tokenSymbol: 'wDEATHK-NIGHT',
     tokenAddresses: {
