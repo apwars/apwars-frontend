@@ -65,6 +65,15 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
         56: '0x491c739efd076655f7D8D0DB545b7fb09DdF517f',
       },
     })
+  } else if (lpLabel === 'wUNDEAD-ARCHER-wUNDEAD-PIKEMAN LP') {
+    liquidityUrlPathParts = getLiquidityUrlPathParts({
+      quoteTokenAdresses,
+      quoteTokenSymbol,
+      tokenAddresses: {
+        97: '',
+        56: '0xd048cDf2e870E60D46527463a14aEFC0377D754c',
+      },
+    })
   } else {
     liquidityUrlPathParts = getLiquidityUrlPathParts({ quoteTokenAdresses, quoteTokenSymbol, tokenAddresses })
   }

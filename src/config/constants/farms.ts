@@ -383,6 +383,28 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.wGOLD,
     quoteTokenAdresses: contracts.wGOLD,
   },
+  {
+    pid: 45,
+    internalPID: 24,
+    farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
+    rewardTip: 'wGOLD',
+    team: 2,
+    tier: 0,
+    risk: 5,
+    race: 'ArcaneLibrary',
+    lpSymbol: 'wWITCH - wGOLD LP',
+    lpAddresses: {
+      97: '',
+      56: '0xc706987bfe6a81de045480772786c8d945d52b56',
+    },
+    tokenSymbol: 'wWITCH',
+    tokenAddresses: {
+      97: '',
+      56: '0x2a63DDDD2c0ba10F465080a06563aF3acb5d1d3c',
+    },
+    quoteTokenSymbol: QuoteToken.wGOLD,
+    quoteTokenAdresses: contracts.wGOLD,
+  },
 
   // Stables
   {
@@ -1101,6 +1123,29 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.wARMOREDGRUNT,
     quoteTokenAdresses: contracts.wARMOREDGRUNT,
   },
+  {
+    pid: 44,
+    internalPID: 2,
+    farmManager: '0xbaCA24eDAB5A5c4028edbCdc7ba855E5FFD091dE',
+    farmManagerVersion: 'v2',
+    rewardTip: 'wWITCH',
+    team: 2,
+    tier: 3,
+    risk: 3,
+    race: 'All',
+    lpSymbol: 'wUNDEAD-ARCHER-wUNDEAD-PIKEMAN LP',
+    lpAddresses: {
+      97: '',
+      56: '0xfcea84a2d1b8419de61732ef1a2bfd4b5fa6c2ad',
+    },
+    tokenSymbol: 'wWITCH',
+    tokenAddresses: {
+      97: '',
+      56: '0x2a63DDDD2c0ba10F465080a06563aF3acb5d1d3c',
+    },
+    quoteTokenSymbol: QuoteToken.wUNDEADPIKEMAN,
+    quoteTokenAdresses: contracts.wUNDEADPIKEMAN,
+  },
 
   // TIER:4
   {
@@ -1174,7 +1219,7 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.wCOURAGE,
     quoteTokenAdresses: contracts.wCOURAGE,
-  },
+  }
 ]
 
 export default farms

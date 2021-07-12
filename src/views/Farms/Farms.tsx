@@ -14,6 +14,7 @@ import {
   useTokenBUSDPrice,
   useTokenwARMOREDWARRIORwGOLDPrice,
   useTokenwARMOREDGRUNTwGOLDPrice,
+  useTokenwUNDEADPIKEMANwGOLDPrice,
 } from 'state/hooks'
 import useRefresh from 'hooks/useRefresh'
 import { fetchFarmUserDataAsync } from 'state/actions'
@@ -35,6 +36,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const tokenPrice = useTokenBUSDPrice()
   const tokenPricewARMOREDWARRIOR = useTokenwARMOREDWARRIORwGOLDPrice()
   const tokenPricewARMOREDGRUNT = useTokenwARMOREDGRUNTwGOLDPrice()
+  const tokenPricewUNDEADPIKEMAN = useTokenwUNDEADPIKEMANwGOLDPrice()
   const bnbPrice = usePriceBnbBusd()
   const { account, ethereum }: { account: string; ethereum: provider } = useWallet()
   const { tokenMode } = farmsProps
@@ -51,13 +53,13 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const [stakedOnly, setStakedOnly] = useState(false)
 
   const activeFarms = farmsLP.filter((farm) => {
-    const isActiveFarms = farm.multiplier !== '0X' && farm.tokenPerBlock !== 0 
+    const isActiveFarms = farm.multiplier !== '0X' && farm.tokenPerBlock !== 0
 
     return race === farm.race && isActiveFarms && farm.tier === parseInt(tierId)
   })
 
   const inactiveFarms = farmsLP.filter((farm) => {
-    const isInactiveFarms = farm.multiplier === '0X' || farm.tokenPerBlock === 0 
+    const isInactiveFarms = farm.multiplier === '0X' || farm.tokenPerBlock === 0
 
     return race === farm.race && isInactiveFarms && farm.tier === parseInt(tierId)
   })
@@ -110,6 +112,12 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           totalValue = totalValue.times(tokenPricewARMOREDGRUNT)
         }
 
+
+        if (farm.quoteTokenSymbol === QuoteToken.wUNDEADPIKEMAN) {
+          apy = tokenPricewUNDEADPIKEMAN.times(tokenRewardPerYear)
+          totalValue = totalValue.times(tokenPricewUNDEADPIKEMAN)
+        }
+
         if (totalValue.comparedTo(0) > 0) {
           apy = apy.div(totalValue)
         }
@@ -129,7 +137,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         />
       ))
     },
-    [bnbPrice, account, tokenPrice, tokenPricewARMOREDWARRIOR, tokenPricewARMOREDGRUNT, ethereum],
+    [bnbPrice, account, tokenPrice, tokenPricewARMOREDWARRIOR, tokenPricewARMOREDGRUNT, tokenPricewUNDEADPIKEMAN, ethereum],
   )
 
   function showCards() {
@@ -188,6 +196,9 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
       )}
       {tierId === '3' && (
         <Image src="/images/apwars/arcane.png" alt="illustration" width={1352} height={587} responsive />
+      )}
+      {tierId === '4' && (
+        <Image src="/images/apwars/stable.png" alt="illustration" width={1352} height={587} responsive />
       )}
       <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
       {(tierId === '1' || tierId === '2') && (
