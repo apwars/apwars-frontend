@@ -394,12 +394,12 @@ const farms: FarmConfig[] = [
     tier: 0,
     risk: 5,
     race: 'Stables',
-    lpSymbol: 'wDEATHK-NIGHT - wGOLD LP',
+    lpSymbol: 'wDEATH-KNIGHT - wGOLD LP',
     lpAddresses: {
       97: '',
       56: '0x88e491b65af6663bb0a496a9a90e3428e0c60724',
     },
-    tokenSymbol: 'wDEATHK-NIGHT',
+    tokenSymbol: 'wDEATH-KNIGHT',
     tokenAddresses: {
       97: '',
       56: '0xD35d5bCCb4141ed62f5cf6B0b020e74eBf793EE5',
@@ -1119,7 +1119,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xeccc204fe46ef158d877bc59ad5489c35e64612a',
     },
-    tokenSymbol: 'wDEATHK-NIGHT',
+    tokenSymbol: 'wDEATH-KNIGHT',
     tokenAddresses: {
       97: '',
       56: '0x5F51A3ce7f2233777328866F477E86a91CA9DdeC',
