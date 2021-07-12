@@ -408,6 +408,28 @@ const farms: FarmConfig[] = [
 
   // Stables
   {
+    pid: 51,
+    internalPID: 27,
+    farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
+    rewardTip: 'wGOLD',
+    team: 1,
+    tier: 0,
+    risk: 5,
+    race: 'Stables',
+    lpSymbol: 'wHORSEMAN - wGOLD LP',
+    lpAddresses: {
+      97: '',
+      56: '0xfd82da44f0098741bbe10681208390c57f9a7c27',
+    },
+    tokenSymbol: 'wHORSEMAN',
+    tokenAddresses: {
+      97: '',
+      56: '0x820c6a4f940a4470E9D2933aAb831a2eE7508fcF',
+    },
+    quoteTokenSymbol: QuoteToken.wGOLD,
+    quoteTokenAdresses: contracts.wGOLD,
+  },
+  {
     pid: 47,
     internalPID: 29,
     farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
@@ -447,28 +469,6 @@ const farms: FarmConfig[] = [
     tokenAddresses: {
       97: '',
       56: '0x66e22551BCe75874f91d46dB684621500C9480ae',
-    },
-    quoteTokenSymbol: QuoteToken.wGOLD,
-    quoteTokenAdresses: contracts.wGOLD,
-  },
-  {
-    pid: 51,
-    internalPID: 27,
-    farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
-    rewardTip: 'wGOLD',
-    team: 1,
-    tier: 0,
-    risk: 5,
-    race: 'Stables',
-    lpSymbol: 'wHORSEMAN - wGOLD LP',
-    lpAddresses: {
-      97: '',
-      56: '0xfd82da44f0098741bbe10681208390c57f9a7c27',
-    },
-    tokenSymbol: 'wHORSEMAN',
-    tokenAddresses: {
-      97: '',
-      56: '0x820c6a4f940a4470E9D2933aAb831a2eE7508fcF',
     },
     quoteTokenSymbol: QuoteToken.wGOLD,
     quoteTokenAdresses: contracts.wGOLD,
@@ -1148,6 +1148,30 @@ const farms: FarmConfig[] = [
   },
 
   // TIER:4
+    {
+    isTokenOnly: true,
+    pid: 50,
+    internalPID: 0,
+    farmManager: '0x76D1FE132B1004f458Ed833392e33E1a483a0849',
+    farmManagerVersion: 'v2',
+    rewardTip: 'wHORSEMAN',
+    team: 1,
+    tier: 4,
+    risk: 3,
+    race: 'All',
+    lpSymbol: 'wCOURAGE',
+    lpAddresses: {
+      97: '',
+      56: '0x15Ce8078E7230c129f1BdbDB5b2C0d84d3064340',
+    },
+    tokenSymbol: 'wHORSEMAN',
+    tokenAddresses: {
+      97: '',
+      56: '0x5F51A3ce7f2233777328866F477E86a91CA9DdeC',
+    },
+    quoteTokenSymbol: QuoteToken.wCOURAGE,
+    quoteTokenAdresses: contracts.wCOURAGE,
+  },
   {
     isTokenOnly: true,
     pid: 46,
@@ -1196,30 +1220,6 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.wCOURAGE,
     quoteTokenAdresses: contracts.wCOURAGE,
   },
-  {
-    isTokenOnly: true,
-    pid: 50,
-    internalPID: 0,
-    farmManager: '0x76D1FE132B1004f458Ed833392e33E1a483a0849',
-    farmManagerVersion: 'v2',
-    rewardTip: 'wHORSEMAN',
-    team: 1,
-    tier: 4,
-    risk: 3,
-    race: 'All',
-    lpSymbol: 'wCOURAGE',
-    lpAddresses: {
-      97: '',
-      56: '0x15Ce8078E7230c129f1BdbDB5b2C0d84d3064340',
-    },
-    tokenSymbol: 'wHORSEMAN',
-    tokenAddresses: {
-      97: '',
-      56: '0x5F51A3ce7f2233777328866F477E86a91CA9DdeC',
-    },
-    quoteTokenSymbol: QuoteToken.wCOURAGE,
-    quoteTokenAdresses: contracts.wCOURAGE,
-  }
 ]
 
 export default farms
