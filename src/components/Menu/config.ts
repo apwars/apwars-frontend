@@ -45,6 +45,10 @@ const config: MenuEntry[] = [
         href: '/farms/tier/0/ArcaneLibrary',
       },
       {
+        label: 'Gold Mine - Stables - Mounted units',
+        href: '/farms/tier/0/Stables',
+      },
+      {
         label: 'Barracks',
         href: '/farms/tier/1/All',
       },
