@@ -69,6 +69,29 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.wGOLD,
     quoteTokenAdresses: contracts.wGOLD,
   },
+  {
+    pid: 52,
+    internalPID: 33,
+    farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
+    rewardTip: 'wGOLD',
+    team: 0,
+    tier: 0,
+    risk: 5,
+    race: 'All',
+    lpSymbol: 'wWISDOM',
+    lpAddresses: {
+      97: '',
+      56: '0x8C704C6BeA53f724Ac9600a7CDD4a512729F8AF3',
+    },
+    tokenSymbol: 'wWISDOM',
+    tokenAddresses: {
+      97: '',
+      56: '0x8C704C6BeA53f724Ac9600a7CDD4a512729F8AF3',
+    },
+    quoteTokenSymbol: QuoteToken.wGOLD,
+    quoteTokenAdresses: contracts.wGOLD,
+  },
+
 
   // Barracks
   {
