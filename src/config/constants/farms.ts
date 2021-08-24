@@ -226,6 +226,50 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.wGOLD,
     quoteTokenAdresses: contracts.wGOLD,
   },
+  {
+    pid: 55,
+    internalPID: 34,
+    farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
+    rewardTip: 'wGOLD',
+    team: 1,
+    tier: 0,
+    risk: 3,
+    race: 'Barracks',
+    lpSymbol: 'wPIKE-ELF - wGOLD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x302ef0de472fa31aff1b52af943c425b6695d0f4',
+    },
+    tokenSymbol: 'wPIKE-ELF',
+    tokenAddresses: {
+      97: '',
+      56: '0xa248284fB4E3E58400644dc4Cd37410F8AB31266',
+    },
+    quoteTokenSymbol: QuoteToken.wGOLD,
+    quoteTokenAdresses: contracts.wGOLD,
+  },
+  {
+    pid: 56,
+    internalPID: 35,
+    farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
+    rewardTip: 'wGOLD',
+    team: 1,
+    tier: 0,
+    risk: 3,
+    race: 'Barracks',
+    lpSymbol: 'wELVEN-ARCHER - wGOLD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x39F18435FfAc6d5bdE24551EfE166620DCc315B0',
+    },
+    tokenSymbol: 'wELVEN-ARCHER',
+    tokenAddresses: {
+      97: '',
+      56: '0x804e7030F932CA06DEe7bC08051f1123898ceF5d',
+    },
+    quoteTokenSymbol: QuoteToken.wGOLD,
+    quoteTokenAdresses: contracts.wGOLD,
+  },
 
   // Armory
   {
@@ -797,6 +841,55 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.wGOLD,
     quoteTokenAdresses: contracts.busd,
   },
+  {
+    isTokenOnly: true,
+    pid: 53,
+    internalPID: 0,
+    farmManager: '0xAef96D25b95dB95dDE79f63681C6427452939e6d',
+    farmManagerVersion: 'v2',
+    rewardTip: 'wPIKE-ELF',
+    team: 1,
+    tier: 1,
+    risk: 3,
+    race: 'All',
+    lpSymbol: 'wGOLD',
+    lpAddresses: {
+      97: '',
+      56: '0xab6Ddad53513f9F0b57778A2ebf8aA81FBaCc8c9',
+    },
+    tokenSymbol: 'wPIKE-ELF',
+    tokenAddresses: {
+      97: '',
+      56: '0x7ab6eedd9443e0e98e5ea93667ca5b250b8dda51',
+    },
+    quoteTokenSymbol: QuoteToken.wGOLD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    isTokenOnly: true,
+    pid: 54,
+    internalPID: 0,
+    farmManager: '0x775d7a91148771ba2aae7f2098113e008520bebf',
+    farmManagerVersion: 'v2',
+    rewardTip: 'wELVEN-ARCHER',
+    team: 1,
+    tier: 1,
+    risk: 3,
+    race: 'All',
+    lpSymbol: 'wGOLD',
+    lpAddresses: {
+      97: '',
+      56: '0xab6Ddad53513f9F0b57778A2ebf8aA81FBaCc8c9',
+    },
+    tokenSymbol: 'wELVEN-ARCHER',
+    tokenAddresses: {
+      97: '',
+      56: '0x7ab6eedd9443e0e98e5ea93667ca5b250b8dda51',
+    },
+    quoteTokenSymbol: QuoteToken.wGOLD,
+    quoteTokenAdresses: contracts.busd,
+  },
+
 
   // TIER:2
   {
