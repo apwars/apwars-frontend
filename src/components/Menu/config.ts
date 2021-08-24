@@ -60,10 +60,6 @@ const config: MenuEntry[] = [
         label: 'Arcane Library',
         href: '/farms/tier/3/All',
       },
-      {
-        label: 'Stables - Mounted units',
-        href: '/farms/tier/4/All',
-      },
     ],
   },
   {
@@ -122,7 +118,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: 'https://docs.apwars.farm',
+        href: 'https://apwars.farm/docs',
       },
       {
         label: 'Blog',

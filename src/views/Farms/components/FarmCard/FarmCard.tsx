@@ -172,23 +172,28 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, tokenPrice, bnbPrice
       {!removed && (
         <Flex justifyContent="space-between" alignItems="center">
           <Text>{TranslateString(352, 'APR')}:</Text>
-          <Text bold style={{ display: 'flex', alignItems: 'center' }}>
-            {farm.apy ? (
-              <>
-                <ApyButton
-                  lpLabel={lpLabel}
-                  quoteTokenAdresses={quoteTokenAdresses}
-                  quoteTokenSymbol={quoteTokenSymbol}
-                  tokenAddresses={tokenAddresses}
-                  tokenPrice={tokenPrice}
-                  apy={farm.apy}
-                />
-                {farmAPY}%
-              </>
-            ) : (
-              <Skeleton height={24} width={80} />
-            )}
-          </Text>
+          {farm.tokenSymbol !== "wWISDOM" ? (
+            <Text bold style={{ display: 'flex', alignItems: 'center' }}>
+              {farm.apy ? (
+                <>
+                  <ApyButton
+                    lpLabel={lpLabel}
+                    quoteTokenAdresses={quoteTokenAdresses}
+                    quoteTokenSymbol={quoteTokenSymbol}
+                    tokenAddresses={tokenAddresses}
+                    tokenPrice={tokenPrice}
+                    apy={farm.apy}
+                  />
+                  {farmAPY}%
+                </>
+              ) : (
+                <Skeleton height={24} width={80} />
+              )}
+            </Text>
+
+          ) : (<Text>waiting for LP</Text>)}
+
+
         </Flex>
       )}
       <Flex justifyContent="space-between">
