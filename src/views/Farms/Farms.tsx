@@ -192,7 +192,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         <Image src="/images/apwars/barracks.png" alt="illustration" width={1352} height={587} responsive />
       )}
       {tierId === '2' && (
-        <Image src="/images/apwars/armory.png?v=1" alt="illustration" width={1352} height={587} responsive />
+        <Image src="/images/apwars/armory.png?v=2" alt="illustration" width={1352} height={587} responsive />
       )}
       {tierId === '3' && (
         <Image src="/images/apwars/arcane.png" alt="illustration" width={1352} height={587} responsive />
