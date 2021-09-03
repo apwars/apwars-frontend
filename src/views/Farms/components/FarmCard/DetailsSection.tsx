@@ -74,6 +74,15 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
         56: '0xd048cDf2e870E60D46527463a14aEFC0377D754c',
       },
     })
+  } else if (lpLabel === 'wARMORED-ELF-wBLADEMASTER LP') {
+    liquidityUrlPathParts = getLiquidityUrlPathParts({
+      quoteTokenAdresses,
+      quoteTokenSymbol,
+      tokenAddresses: {
+        97: '',
+        56: '0xF35e1Bd15E49651ad76aB0A4B9ce93F6e9850f7F',
+      },
+    })
   } else {
     liquidityUrlPathParts = getLiquidityUrlPathParts({ quoteTokenAdresses, quoteTokenSymbol, tokenAddresses })
   }
