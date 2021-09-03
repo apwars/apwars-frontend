@@ -517,6 +517,28 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.wGOLD,
     quoteTokenAdresses: contracts.wGOLD,
   },
+  {
+    pid: 64,
+    internalPID: 38,
+    farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
+    rewardTip: 'wGOLD',
+    team: 2,
+    tier: 0,
+    risk: 5,
+    race: 'ArcaneLibrary',
+    lpSymbol: 'wFERAL-SPIRIT - wGOLD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x9bE00135880c4db3D3759d370758bDc87443af36',
+    },
+    tokenSymbol: 'wFERAL-SPIRIT',
+    tokenAddresses: {
+      97: '',
+      56: '0xA7439A291251F4Dd250fE3B3f65FbE537fE633bb',
+    },
+    quoteTokenSymbol: QuoteToken.wGOLD,
+    quoteTokenAdresses: contracts.wGOLD,
+  },
 
   // Stables
   {
@@ -1406,6 +1428,29 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.wUNDEADPIKEMAN,
     quoteTokenAdresses: contracts.wUNDEADPIKEMAN,
+  },
+  {
+    pid: 63,
+    internalPID: 0,
+    farmManager: '0x74de8a017Cb1e6EF4B7ba722a607E2CeF1C637B4',
+    farmManagerVersion: 'v2',
+    rewardTip: 'wFERAL-SPIRIT',
+    team: 2,
+    tier: 3,
+    risk: 3,
+    race: 'All',
+    lpSymbol: 'wARMORED-ELF-wBLADEMASTER LP',
+    lpAddresses: {
+      97: '',
+      56: '0x34299Ed62698BB13e03cB8A37DD494F6F7BF0ef9',
+    },
+    tokenSymbol: 'wFERAL-SPIRIT',
+    tokenAddresses: {
+      97: '',
+      56: '0xA7439A291251F4Dd250fE3B3f65FbE537fE633bb',
+    },
+    quoteTokenSymbol: QuoteToken.wBLADEMASTER,
+    quoteTokenAdresses: contracts.wBLADEMASTER,
   },
 ]
 
