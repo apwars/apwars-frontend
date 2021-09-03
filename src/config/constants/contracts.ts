@@ -55,6 +55,10 @@ export default {
     56: '0x8b394cfAeBA9812801C92388570C95208Ad1300D',
     97: '',
   },
+  wBLADEMASTER: {
+    56: '0xE7Cb07032a9b9150a25249709C50b9BD923E445e',
+    97: '',
+  },
   wCOURAGE: {
     56: '0x5f51a3ce7f2233777328866f477e86a91ca9ddec',
     97: '',

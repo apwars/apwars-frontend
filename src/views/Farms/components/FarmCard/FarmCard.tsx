@@ -16,6 +16,7 @@ import {
   useTokenwARMOREDGRUNTwGOLDPrice,
   useTokenwARMOREDWARRIORwGOLDPrice,
   useTokenwUNDEADPIKEMANwGOLDPrice,
+  useTokenwBLADEMASTERwGOLDPrice,
   useTokenBUSDPrice,
 } from '../../../../state/hooks'
 
@@ -111,6 +112,9 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, tokenPrice, bnbPrice
   const pricewARMOREDGRUNT = useTokenwARMOREDGRUNTwGOLDPrice()
   const pricewARMOREDWARRIOR = useTokenwARMOREDWARRIORwGOLDPrice()
   const pricewUNDEADPIKEMAN = useTokenwUNDEADPIKEMANwGOLDPrice()
+  const pricewBLADEMASTER = useTokenwBLADEMASTERwGOLDPrice()
+
+
 
   const totalValue: BigNumber = useMemo(() => {
     if (!farm.lpTotalInQuoteToken) {
@@ -131,6 +135,9 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, tokenPrice, bnbPrice
     if (farm.quoteTokenSymbol === QuoteToken.wUNDEADPIKEMAN) {
       return pricewGOLD.times(pricewUNDEADPIKEMAN).times(farm.lpTotalInQuoteToken)
     }
+    if (farm.quoteTokenSymbol === QuoteToken.wBLADEMASTER) {
+      return pricewGOLD.times(pricewBLADEMASTER).times(farm.lpTotalInQuoteToken)
+    }
     return farm.lpTotalInQuoteToken
   }, [
     bnbPrice,
@@ -141,6 +148,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, tokenPrice, bnbPrice
     pricewGOLD,
     pricewARMOREDWARRIOR,
     pricewUNDEADPIKEMAN,
+    pricewBLADEMASTER,
   ])
 
   const totalValueFormated = totalValue

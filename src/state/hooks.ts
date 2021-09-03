@@ -99,6 +99,12 @@ export const useTokenwUNDEADPIKEMANwGOLDPrice = (): BigNumber => {
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
+export const useTokenwBLADEMASTERwGOLDPrice = (): BigNumber => {
+  const pid = 37 // wBLADEMASTER-wGOLD LP
+  const farm = useFarmFromPid(pid)
+  return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
+}
+
 export const useTotalValue = (): BigNumber => {
   const farms = useFarms()
   const bnbPrice = usePriceBnbBusd()
