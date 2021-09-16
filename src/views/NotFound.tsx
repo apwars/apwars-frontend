@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button, Heading, Text, LogoIcon } from '@pancakeswap-libs/uikit'
+import { Button, Heading, Text } from '@pancakeswap-libs/uikit'
 import Page from 'components/layout/Page'
 import useI18n from 'hooks/useI18n'
 
@@ -18,7 +18,12 @@ const NotFound = () => {
   return (
     <Page>
       <StyledNotFound>
-        <LogoIcon width="64px" mb="8px" />
+        <img
+          width="117"
+          height="38"
+          src="/images/apwars/logo-small.png"
+          alt="APWars"
+        />
         <Heading size="xxl">404</Heading>
         <Text mb="16px">{TranslateString(999, 'Oops, page not found.')}</Text>
         <Button as="a" href="/" size="sm">
