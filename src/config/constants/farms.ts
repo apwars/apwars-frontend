@@ -607,6 +607,29 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.wGOLD,
     quoteTokenAdresses: contracts.wGOLD,
   },
+  {
+    pid: 65,
+    internalPID: 39,
+    farmManager: '0x334b679ec7ed94fd03342ab842ff3190395ac53b',
+    rewardTip: 'wGOLD',
+    team: 2,
+    tier: 0,
+    risk: 5,
+    race: 'Stables',
+    lpSymbol: 'wELK-RIDER - wGOLD LP',
+    lpAddresses: {
+      97: '',
+      56: '0xd6a89d10659895487e24d4a5f46baefdff4a7ea2',
+    },
+    tokenSymbol: 'wELK-RIDER',
+    tokenAddresses: {
+      97: '',
+      56: '0x2e67BD04a28faD0d243d7f7Cd436027D41a68A25',
+    },
+    quoteTokenSymbol: QuoteToken.wGOLD,
+    quoteTokenAdresses: contracts.wGOLD,
+  },
+
 
   {
     pid: 2,
